@@ -53,6 +53,7 @@ var score = 0;
 
 NextQuestion();
 
+// Prompt the user for the answer, and allow them to exit
 function PromptUserAnswer() {
   var submittedAnswer = prompt(
     "Answer?.......... pst. type 'exit' to, y'know, cut and run.",
@@ -76,10 +77,12 @@ function PromptUserAnswer() {
   }
 }
 
+// Display the current score in the console
 function ShowScore() {
   console.log(score);
 }
 
+// Display the next Question
 function NextQuestion() {
   n = Math.floor(Math.random() * questions.length);
 
