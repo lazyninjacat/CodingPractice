@@ -53,24 +53,31 @@ c) correct answer (I would use a number for this)
     this.answers = answers;
     this.correct = correct;
   }
+
   var q1 = new Question(
     "What has it got in its pockets?",
     ["a: string", "b: nothing", "c: the precious"],
     "c"
   );
+
   var q2 = new Question(
     "What time is it Mr.Wolf?",
     ["a: no idea", "b: LUNCH TIME!!!"],
     "b"
   );
+
   var q3 = new Question(
     "What is the square root of the hypotenuse if the third brother has green eyes?",
     ["a: PIZZA!!", "b: 4.2 kerzics"],
     "a"
   );
+
   var questions = [q1, q2, q3];
+
   var n = Math.floor(Math.random() * questions.length);
+
   var score = 0;
+
   NextQuestion();
 
   // Prompt the user for the answer, and allow them to exit
@@ -108,6 +115,7 @@ c) correct answer (I would use a number for this)
     for (i = 0; i < questions.length; i++) {
       console.log(questions[n].answers[i]);
     }
+
     PromptUserAnswer();
   }
 })();
