@@ -27,21 +27,21 @@ var startArray = [3, 5, 6, 9, 9, 4, 3, 12];
 var endArray = [];
 var isDuplicate = false;
 
-function findUniques() {
-  for (i = 0; i < startArray.length; i++) {
+function findUniques(arr) {
+  for (i = 0; i < arr.length; i++) {
     for (x = 0; x < i; x++) {
-      if (startArray[x] === startArray[i]) {
+      if (arr[x] === arr[i]) {
         isDuplicate = true;
       }
     }
     if (isDuplicate === false) {
-      endArray.push(startArray[i]);
+      endArray.push(arr[i]);
     }
     isDuplicate = false;
   }
 }
 
-findUniques();
+findUniques(startArray);
 
 console.log("Start array = " + startArray);
 console.log("Uniques = " + endArray);
