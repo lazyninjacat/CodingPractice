@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>
+      Sum of Two
+    </title>
+  </head>
+
+  <body>
+    <h1>Sum of Two</h1>
+    <h2>
+      The Problem:
+    </h2>
+    <p>
+      You have two integer arrays, a and b, and an integer target value v.
+      Determine whether there is a pair of numbers, where one number is taken
+      from a and the other from b, that can be added together to get a sum of v.
+      Return true if such a pair exists, otherwise return false.
+    </p>
+    <p>
+      For example,<br /><br />
+      a = [1, 2, 3]<br />
+      b = [10, 20, 30, 40] <br />
+      v = 42<br />
+      40 + 2 = 42<br />
+      sumOfTwo(a, b, v) = true
+    </p>
+    <p>
+      Use your intuition to come up with an algorithm.
+    </p>
+    <h3>Solution 1 -- Brute Force Method</h3>
+    <p>Use as many nested for loops as necessary, big O time be damned!</p>
+    <br />
+    <h3>Solution 2 -- Hash Set Method</h3>
+    <p>
+      Much faster. Use a data structure. In this case, a hash set! Or rather,
+      since this is JavaScript, a hash set object! This way we can have two
+      sequancial for loops instead of a nested for loop. If the brute force
+      method is AxB, this hash set data structure method is A+B. MUCH BETTER!
+    </p>
+    <p>The moral of the story: use data structures!</p>
+    <script src="SumOfTwo.js"></script>
+  </body>
+</html>
